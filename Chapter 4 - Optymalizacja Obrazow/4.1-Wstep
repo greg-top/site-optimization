@@ -1,0 +1,28 @@
+# Wstęp
+
+- do testów należy wyłączyć cache oraz ustalić 2 przepustowości Internetu (np. dla połączenia komputerowego wi-fi, oraz mobile)
+- warto dodać własne ustawienia sieci dla sieci mobile:
+    - 4g, D: 14.7Mbit/s, U: 13.6Mbit/s, L: 53
+    - 3g, D: 5.9Mbit/s, U: 1.6Mbit/s, L: 65 (source: https://www.ofcom.org.uk/about-ofcom/latest/media/media-releases/2015/4g-outperforms-3g)
+- w 1 kroku powinno się zrobić test strony, czasy **DOMContentLoaded** i **Load** dla wszystkich założonych urządzeń, np.
+
+    - przed optymailzacją (no cache):<br>
+    **Normal connection**: 902ms, 1.45s<br>
+    **3g**: 841ms, 6.07s<br>
+    **4g**: 860ms, 2.92s
+    **slow connection(Google preset)**: 2.07s, 24.26s
+
+    - po optymalizacji: czynnik obrazy<br>
+    **Normal connection**: xx ms, xx s<br>
+    **3g**: xx ms, xx s<br>
+    **4g**: xx ms, xx s
+    **slow connection(Google preset)**: xx s, xx s
+- optymailzację strony zawsze powinno się robić badając pojedyncze czynniki:
+    - optymalizacja obrazów (pre i post testy)
+    - optymailzacja HTML (pre i post testy)
+    - optymalizacja CSS (pre i post testy)
+    - optymalizacja JS (pre i post testy)
+    - optymailizacja fontów (pre i post testy)
+    
+
+
