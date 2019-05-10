@@ -39,5 +39,4 @@ gulp.task('js-extended', function () {
         .pipe(rename('scripts.min.js')) //zmiana nazwy pliku
         .pipe(uglify()) //minifikacja pliku wyjściowego
         .pipe(gulp.dest(dest));
-
 });
